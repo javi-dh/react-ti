@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Películas Grid - React App</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">React Movie DB APP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="peliculas-grid.html">Peliculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series-grid.html">Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mi-lista-grid.html">Mi Lista <span class="badge badge-danger">3</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0" action="busqueda-peliculas-grid.html">
+                    <input class="form-control" type="text" placeholder="Buscar Película o Serie" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main role="main">
+    <div class="py-5 bg-light">
+        <div class="container">
+            <h1>Películas</h1>
+            <div class="filters-bar">
+                <div class="filters-bar-left">
+                    <select name="filter-year" id="filter-year" class="form-control">
+                        <option value="">Año</option>
+                    </select>
+                    <select name="filter-sort" id="filter-sort" class="form-control">
+                        <option value="">Ordenar por</option>
+                    </select>
+                    <select name="filter-genre" id="filter-genre" class="form-control">
+                        <option value="">Géneros</option>
+                    </select>
+                </div>
+                <div class="filters-bar-right">
+                    <a href="peliculas-grid.html" class="btn btn-light active" aria-label="Profile">
+                        <i class="mdi mdi-view-grid" aria-hidden="true"></i>
+                    </a>
+                    <a href="peliculas-list.html" class="btn btn-light" aria-label="Profile">
+                        <i class="mdi mdi-view-list" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <section class="items-section">
+                <div class="items-section-body">
+                    <div class="row">
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                        <article class="col-md-2">
+                            <a href="detalle.html" class="grid-item">
+                                <img src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/oSLd5GYGsiGgzDPKTwQh7wamO8t.jpg" alt="Movie Image" class="img-fluid">
+                                <span class="grid-item-body">
+                                    <span class="grid-item-title">Thor: Ragnarok</span>
+                                    <span class="grid-item-date">October 25, 2017</span>
+                                </span>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
